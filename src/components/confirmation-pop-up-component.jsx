@@ -1,10 +1,10 @@
 import React from "react";
 
-export function ConfirmationPopUp(){
+export function ConfirmationPopUp({confirmDelete, undoDelete}){
     return(
         <div className='confirmation-pop-up'>
-            <button>Deshacer cambios</button>
-            <button>Confirmar cambios</button>
+            <button onClick={undoDelete}>Deshacer cambios</button>
+            <button onClick={confirmDelete}>Confirmar cambios</button>
         </div>
     );
 }
