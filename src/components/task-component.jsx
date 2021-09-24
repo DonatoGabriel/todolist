@@ -6,7 +6,7 @@ export function Task({item, completeTask}) {
 
     return(
         <div className={isCompleted ? 'task-completed' : 'task'}>
-            <input type='checkbox' onChange={handleCompleteTask} checked={isCompleted}/>
+            <input type='checkbox' className='input-checkbox' onChange={handleCompleteTask} checked={isCompleted}/>
             <span>{body}</span>
         </div>
     );

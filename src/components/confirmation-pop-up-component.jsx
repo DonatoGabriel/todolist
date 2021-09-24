@@ -3,8 +3,8 @@ import React from "react";
 export function ConfirmationPopUp({confirmDelete, undoDelete}){
     return(
         <div className='confirmation-pop-up'>
-            <button onClick={undoDelete}>Deshacer cambios</button>
-            <button onClick={confirmDelete}>Confirmar cambios</button>
+            <button onClick={undoDelete}>UNDO CHANGES</button>
+            <button onClick={confirmDelete}>CONFIRM CHANGES</button>
         </div>
     );
 }
